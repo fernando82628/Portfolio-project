@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin} from 'react-icons/ai';
+import { AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
+//import design from '../public/code.png';
+
+
 
 export default function Home() {
   return (
@@ -17,11 +20,11 @@ export default function Home() {
             <h1 className='text-xl font-mono'>Hola</h1>
             <ul className='flex items-center'>
               <li>
-                <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
+                <BsFillMoonStarsFill className='cursor-pointer text-2xl' />
               </li>
               <li>
                 <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
-                 href='#'>Resume</a>
+                  href='#'>Resume</a>
               </li>
             </ul>
           </nav>
@@ -30,9 +33,43 @@ export default function Home() {
             <h3 className='text-2xl py-2'>Developer</h3>
             <p className='text-md py-5 leading-8 text-gray-800'>Thingssss to say.</p>
           </div>
+          <div className='text-5xl flex justify-center gap-6 py-3 text-gray-600'>
+            <AiFillTwitterCircle />
+            <AiFillLinkedin />
+          </div>
+        </section>
+
+        <section>
           <div>
-<AiFillTwitterCircle />
-<AiFillLinkedin />
+            <h3 className='text-3xl py-1'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              This is the beginnin of my journey as a developer.
+            </p>
+          </div>
+          <div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              {/* <Image src={#} width={100} height={100} /> */}
+              <h3 className='text-lg font-medium pt-8 pb-2'>Coding designs</h3>
+              <p className='py-2'>sdfsadfasdf</p>
+              <h4 className='py-4 text-teal-600'>sadfasdfsadfsadf</h4>
+              <p className='text-gray-800 py-1'>phtoo</p>
+              <p className='text-gray-800 py-1'>illustra</p>
+              <p className='text-gray-800 py-1'>figma</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              {/* <Image src={#} width={100} height={100} /> */}
+              <h3 className='text-lg font-medium pt-8 pb-2'>Coding designs</h3>
+              <p className='py-2'>sdfsadfasdf</p>
+              <h4 className='py-4 text-teal-600'>sadfasdfsadfsadf</h4>
+              <p className='text-gray-800 py-1'>phtoo</p>
+              <p className='text-gray-800 py-1'>illustra</p>
+              <p className='text-gray-800 py-1'>figma</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
           </div>
         </section>
       </main>
